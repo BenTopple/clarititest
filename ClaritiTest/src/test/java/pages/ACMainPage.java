@@ -22,20 +22,22 @@ public class ACMainPage {
 	//locators
 	By selectLanguage = By.xpath("//*[@id=\"acSiteEditionSelectorDesktop-button\"]");
 	By confirmLanguage = By.xpath("//*[@id=\"acEditionSelectorConfirmButton\"]");
-	By flightsTab = By.xpath("//*[@id=\"bkmg-tab-button-flight\"]");
+	
+	By flightsTab = By.id("bkmg-tab-button-flight");
 	//By flightTypeSelector = By.id("bkmgFlights_tripTypeSelectorSelectedOption");	
+	
 	By flightOrigin = By.name("flightsTabOrigin1");
-	By flightDestination = By.name("flightsTabDestination1");
+	By flightDestination = By.name("flightsTabDestination1");	
+	By originOption1 = By.id("bkmgFlights_origin_trip_1SearchResult0");
+	By destinationOption1 = By.id("bkmgFlights_destination_trip_1SearchResult1");
 	
 	By startDate = By.name("bkmgFlights_travelDates_1-formfield-1");
 	By returnDate = By.name("bkmgFlights_travelDates_1-formfield-2");
-	
-	By findFlightsButton = By.id("bkmgFlights_findButton");
-	
+
 	By promoCode = By.id("bkmgFlights_promoCode");
 	
-	By originOption1 = By.id("bkmgFlights_origin_trip_1SearchResult0");
-	By destinationOption1 = By.id("bkmgFlights_destination_trip_1SearchResult1");
+	By findFlightsButton = By.id("bkmgFlights_findButton");	
+
 	//selector//
 //	By flightTypeSelector = By.xpath("//*[@id=\"bkmgFlights_tripTypeSelector\"]");
 //	
@@ -99,8 +101,7 @@ public class ACMainPage {
 	{
 		driver.findElement(findFlightsButton).click();
 		
-		return new SelectFlightsPage(driver);		
-	
+		return new SelectFlightsPage(driver);	
 	}
 	
 	public void enterPromoCode(String code)
@@ -115,63 +116,6 @@ public class ACMainPage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-	}
-	
-	
-	
-	////////////////////
-//	By calendar = By.id(("bkmgFlights_travelDates_1-showCalendar"));
-//	
-//	public void ClickCalendar()
-//	{
-//		driver.findElement(calendar).click();
-//	}
-//	
-//	
-//	Date d = new Date(1);
-//	SimpleDateFormat formatter = new SimpleDateFormat("dd-MMMM-yyyy");
-//	String date = formatter.format(d);
-//	String splitter[] = date.split("-");
-//	String month_year = splitter[1];
-//	String day = splitter[0]; 
-//
-//
-//	public void selectDate(String month_year, String select_day) throws InterruptedException
-//	{ 
-//	List<WebElement> elements = driver.findElements(By.xpath("//div[@class='ui-datepicker-title']/span[1]"));
-//
-//	for (int i=0; i<elements.size();i++)
-//	{
-//	System.out.println(elements.get(i).getText());
-//
-//	//Selecting the month
-//	if(elements.get(i).getText().equals(month_year))
-//	{ 
-//
-//	//Selecting the date 
-//	List<WebElement> days = driver.findElements(By.xpath("//div[@class='ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2']/div[2]/table/tbody/tr/td/a"));
-//
-//	for (WebElement d:days)
-//	{ 
-//	System.out.println(d.getText());
-//	if(d.getText().equals(select_day))
-//	{
-//	d.click();
-//	Thread.sleep(10000);
-//	return;
-//	}
-//	} 
-//
-//	} 
-//
-//	}
-//	driver.findElement(By.xpath("//div[@class='ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2']/div[2]/div/a/span")).click();
-//	selectDate(month_year,select_day);
-//
-//	}
-	
-	
-	////////////////////
-	
+	}	
 
 }

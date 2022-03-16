@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-16T14:00:55 ADT" name="Default suite" finished-at="2022-03-16T14:01:29 ADT" duration-ms="33186">
+  <suite started-at="2022-03-16T14:29:43 ADT" name="Default suite" finished-at="2022-03-16T14:29:51 ADT" duration-ms="8206">
     <groups>
     </groups>
-    <test started-at="2022-03-16T14:00:55 ADT" name="Default test" finished-at="2022-03-16T14:01:29 ADT" duration-ms="33186">
+    <test started-at="2022-03-16T14:29:43 ADT" name="Default test" finished-at="2022-03-16T14:29:51 ADT" duration-ms="8206">
       <class name="test.ACTesting">
-        <test-method is-config="true" signature="SetupTestDriver()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:00:55 ADT" name="SetupTestDriver" finished-at="2022-03-16T14:00:57 ADT" duration-ms="1225" status="PASS">
+        <test-method is-config="true" signature="SetupTestDriver()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:29:43 ADT" name="SetupTestDriver" finished-at="2022-03-16T14:29:44 ADT" duration-ms="1216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupTestDriver -->
-        <test-method signature="ACTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:00:57 ADT" name="ACTest" finished-at="2022-03-16T14:01:28 ADT" duration-ms="31708" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="ACTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:29:44 ADT" name="ACTest" finished-at="2022-03-16T14:29:47 ADT" duration-ms="2756" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span"}
+              <![CDATA[element click intercepted: Element <button class="abc-button abc-button-height-default abc-button-theme-custom abc-button-type-default abc-dir-ltr user-select-none ng-star-inserted" id="bkmg-tab-button-flight" type="button" aria-disabled="false" aria-selected="true" aria-controls="bkmg-tab-content-flight" role="tab" data-analytics-track="home magnet" data-analytics-val="tab>flight" tabindex="0">...</button> is not clickable at point (430, 576). Other element would receive the click: <div class="abc-dialog-overlay abc-dialog-transparent-overlay abc-overlay-aligned-to-parent ng-star-inserted"></div>
   (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-65T02BH', ip: '192.168.2.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819e977be8eb652efee9799f3d7f00e9, findElement {using=xpath, value=//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61272/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 819e977be8eb652efee9799f3d7f00e9]]>
+Command: [be7756b03dcc0a3c14d62001fb78e76b, clickElement {id=365f4f07-860f-4083-97db-afd5239de3fa}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64144/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (be7756b03dcc0a3c14d62001fb78e76b)] -> id: bkmg-tab-button-flight]
+Session ID: be7756b03dcc0a3c14d62001fb78e76b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="abc-button abc-button-height-default abc-button-theme-custom abc-button-type-default abc-dir-ltr user-select-none ng-star-inserted" id="bkmg-tab-button-flight" type="button" aria-disabled="false" aria-selected="true" aria-controls="bkmg-tab-content-flight" role="tab" data-analytics-track="home magnet" data-analytics-val="tab>flight" tabindex="0">...</button> is not clickable at point (430, 576). Other element would receive the click: <div class="abc-dialog-overlay abc-dialog-transparent-overlay abc-overlay-aligned-to-parent ng-star-inserted"></div>
   (Session info: chrome=99.0.4844.74)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-65T02BH', ip: '192.168.2.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [819e977be8eb652efee9799f3d7f00e9, findElement {using=xpath, value=//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61272/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 819e977be8eb652efee9799f3d7f00e9
+Command: [be7756b03dcc0a3c14d62001fb78e76b, clickElement {id=365f4f07-860f-4083-97db-afd5239de3fa}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64144/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (be7756b03dcc0a3c14d62001fb78e76b)] -> id: bkmg-tab-button-flight]
+Session ID: be7756b03dcc0a3c14d62001fb78e76b
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,11 +46,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at test.ACTesting.ACTest(ACTesting.java:104)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pages.ACMainPage.ClickFlightsTab(ACMainPage.java:97)
+at test.ACTesting.ACTest(ACTesting.java:72)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ACTest -->
-        <test-method is-config="true" signature="EndTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:01:28 ADT" name="EndTest" finished-at="2022-03-16T14:01:29 ADT" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:29:47 ADT" name="EndTest" finished-at="2022-03-16T14:29:51 ADT" duration-ms="4213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->

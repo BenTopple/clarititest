@@ -2,7 +2,9 @@ package test;
 
 import java.util.List;
 import java.util.Date;
-import java.text.SimpleDateFormat;  
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
@@ -26,11 +28,15 @@ public class ACTesting {
 	{
 		//setting up driver and location
 		String projectPath = System.getProperty("user.dir");
+		//Chrome
 		System.setProperty("webdriver.chrome.driver",projectPath+"/drivers/chromedriver.exe");
 		driver = new ChromeDriver(); 
-		
+		//Firefox
 		//System.setProperty("webdriver.gecko.driver",projectPath+"/drivers/geckodriver.exe");
 		//driver = new FirefoxDriver(); 
+		
+		//set implicit wait time for timeouts
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	@Test
@@ -61,18 +67,15 @@ public class ACTesting {
 		//WebElement ConfirmLocation = driver.findElement(By.xpath("//*[@id=\"acEditionSelectorConfirmButton\"]"));			
 		acPage.ConfirmLanguageButton();
 		
-		acPage.Wait(4000);
+		acPage.Wait(6000);
 		
-		//Pick up “Flights” tab: 
-//		//Select “Round-Trip” 
-		
-		//click on flights tab
+		//Pick up “Flights” tab
 		acPage.ClickFlightsTab();	
 	
 		//select Round-trip
 		//acPage.FlightTypeSelector("Round-Trip");		
-		Select select = new Select(driver.findElement(By.xpath("//select[@id=\"bkmgFlights_tripTypeSelector\"]")));
-		select.selectByIndex(0);
+		//Select select = new Select(driver.findElement(By.xpath("//select[@id=\"bkmgFlights_tripTypeSelector\"]")));
+		//select.selectByIndex(0);
 	
 		//Set From = “Vancouver YVR”
 		acPage.enterFlightOrigin("Vancouver");
@@ -89,13 +92,11 @@ public class ACTesting {
 		acPage.enterPromoCode("");
 				
 		//Wait until the “Select Flights” page displayed.
-		acPage.Wait(1000);
 		
-		//acPage.clickFindFlightsBtn();
 		//Click “Find”
 		SelectFlightsPage selFlightsPage = acPage.clickFindFlightsBtn();
 		
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
 		
 		selFlightsPage.Wait(8000);
 		
