@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ClaritiTestSuite" >
+
+<test name="ACPracticeTest">
+	<classes>
+		<class name="com.testcode.ClaritiTest.ACTest"/>
+	</classes>
+</test>
+
+
+</suite  >
