@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.*;
-import Pages.ACPage;
 import Pages.ACPageObjects;
 
 public class ACTesting {
@@ -50,7 +50,19 @@ public class ACTesting {
 		//WebElement ConfirmLocation = driver.findElement(By.xpath("//*[@id=\"acEditionSelectorConfirmButton\"]"));			
 		acPage.ConfirmLanguageButton();
 		
-		 
+		acPage.Wait(3000);
+		
+		//click on flights tab
+		//acPage.ClickFlightsTab();	
+	
+		//select Round-trip
+		//acPage.FlightTypeSelector("One-Way");
+		
+		Select select = new Select(driver.findElement(By.xpath("//select[@id=\"bkmgFlights_tripTypeSelector\"]")));
+
+		select.selectByIndex(1);
+		
+		acPage.Wait(5000);
 //		
 //		
 //		//Pick up “Flights” tab: 
