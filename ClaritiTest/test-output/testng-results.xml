@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-15T21:48:15 ADT" name="Default suite" finished-at="2022-03-15T21:48:29 ADT" duration-ms="13780">
+  <suite started-at="2022-03-16T14:00:55 ADT" name="Default suite" finished-at="2022-03-16T14:01:29 ADT" duration-ms="33186">
     <groups>
     </groups>
-    <test started-at="2022-03-15T21:48:15 ADT" name="Default test" finished-at="2022-03-15T21:48:29 ADT" duration-ms="13780">
+    <test started-at="2022-03-16T14:00:55 ADT" name="Default test" finished-at="2022-03-16T14:01:29 ADT" duration-ms="33186">
       <class name="test.ACTesting">
-        <test-method is-config="true" signature="SetupTestDriver()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-15T21:48:15 ADT" name="SetupTestDriver" finished-at="2022-03-15T21:48:16 ADT" duration-ms="1200" status="PASS">
+        <test-method is-config="true" signature="SetupTestDriver()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:00:55 ADT" name="SetupTestDriver" finished-at="2022-03-16T14:00:57 ADT" duration-ms="1225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupTestDriver -->
-        <test-method signature="ACTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-15T21:48:16 ADT" name="ACTest" finished-at="2022-03-15T21:48:25 ADT" duration-ms="8354" status="FAIL">
+        <test-method signature="ACTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:00:57 ADT" name="ACTest" finished-at="2022-03-16T14:01:28 ADT" duration-ms="31708" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id="bkmgFlights_tripTypeSelector"]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span"}
   (Session info: chrome=99.0.4844.74)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-65T02BH', ip: '192.168.2.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a15d44f00ab0266703331283018e6372, findElement {using=xpath, value=//select[@id="bkmgFlights_tripTypeSelector"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52246/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a15d44f00ab0266703331283018e6372]]>
+Command: [819e977be8eb652efee9799f3d7f00e9, findElement {using=xpath, value=//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61272/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 819e977be8eb652efee9799f3d7f00e9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id="bkmgFlights_tripTypeSelector"]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span"}
   (Session info: chrome=99.0.4844.74)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'DESKTOP-65T02BH', ip: '192.168.2.58', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a15d44f00ab0266703331283018e6372, findElement {using=xpath, value=//select[@id="bkmgFlights_tripTypeSelector"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52246}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52246/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a15d44f00ab0266703331283018e6372
+Command: [819e977be8eb652efee9799f3d7f00e9, findElement {using=xpath, value=//*[@id="fdPanel"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Benjamin\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61272}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61272/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 819e977be8eb652efee9799f3d7f00e9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,7 +50,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at test.ACTesting.ACTest(ACTesting.java:61)
+at test.ACTesting.ACTest(ACTesting.java:104)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ACTest -->
-        <test-method is-config="true" signature="EndTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-15T21:48:25 ADT" name="EndTest" finished-at="2022-03-15T21:48:29 ADT" duration-ms="4206" status="PASS">
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:test.ACTesting@12468a38]" started-at="2022-03-16T14:01:28 ADT" name="EndTest" finished-at="2022-03-16T14:01:29 ADT" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->
