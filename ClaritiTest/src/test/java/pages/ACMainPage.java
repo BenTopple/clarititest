@@ -47,7 +47,9 @@ public class ACMainPage {
 //
 //		select.selectByIndex(index);
 //	}
-			
+		
+	//locator methods
+	
 	public void enterTripStartDate(String inputDate)
 	{
 		driver.findElement(startDate).sendKeys(inputDate);
@@ -81,7 +83,6 @@ public class ACMainPage {
 		
 	}
 	
-	//locator methods
 	public void clickLanguageButton()
 	{
 		driver.findElement(selectLanguage).click();

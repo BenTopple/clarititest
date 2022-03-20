@@ -10,7 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -36,13 +38,14 @@ public class ACTesting {
 		//driver = new FirefoxDriver(); 
 		
 		//set implicit wait time for timeouts
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
 	}
 	
-	@Test
+	@Test (priority = 0)
 	public void ACTest()
 	{		   	
-		
+
 		ACMainPage acPage = new ACMainPage(driver);
 		
 		//declare site url
@@ -89,21 +92,24 @@ public class ACTesting {
 		acPage.enterTripReturnDate("22/07/2022");
 		
 		//Without Promo Code
-		acPage.enterPromoCode("");
+		acPage.enterPromoCode("");		
 				
-		//Wait until the “Select Flights” page displayed.
-		
 		//Click “Find”
 		SelectFlightsPage selFlightsPage = acPage.clickFindFlightsBtn();
+		selFlightsPage.Wait(5000);
+		//driver.manage().window().fullscreen();
+		//Wait until the “Select Flights” page displayed.
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("EXECCabin")));
 		
 		//driver.manage().window().fullscreen();
 		
-		selFlightsPage.Wait(8000);
-		
+		//selFlightsPage.Wait(8000);
+				
 		//Assert Displays Date as July 15,2022 on Search Result page
 		//Assert.assertEquals(actual,expected);  
 		Assert.assertEquals("Fri - Jul 15",driver.findElement(By.xpath("//*[@id=\"fdPanel\"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span")).getText()); 
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"fdPanel\"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span")).getText());  
+		//System.out.println(driver.findElement(By.xpath("//*[@id=\"fdPanel\"]/div/div/calendar-panel/div/div/ul/li[6]/a/div[2]/span")).getText());  
 				
 		//Assert Displays Economy, Premium Economy and Business Class Tabs on Search Result page	
 		//Economy
@@ -113,7 +119,7 @@ public class ACTesting {
 		//Business
 		Assert.assertEquals("Business Class",driver.findElement(By.id("EXECCabin")).getText()); 
 		
-		selFlightsPage.Wait(5000);
+		//selFlightsPage.Wait(5000);
 	}
 	
 	@AfterTest
